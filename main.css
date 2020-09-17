@@ -44,11 +44,58 @@ body {
   background: rgb(255, 255, 255);
   color: #19b84c;
   padding: 8px;
-  display: inline-block;
-  width: 75%;
   text-align: center;
-  box-shadow: 1px 4px 10px 0.5px rgba(19, 19, 19, 0.3);
+  box-shadow: 2px 2px 5px 2px rgba(19, 19, 19, 0.5);
   border-radius: 6px;
+}
+
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: #666565;
+}
+
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
+}
+
+.plan--highlighted .plan__title {
+  color: #fff;
+}
+
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan__features li {
+  margin: 8px 0;
+}
+
+.button {
+  color: white;
+  background: #0e4f1f;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+
+  outline: 0;
+  margin: 16px;
+
+  box-shadow: 1px 2px 5px 1px rgba(53, 53, 53, 0.3);
+  transition: all 0.2s;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
 }
 
 .main-header {
