@@ -1,0 +1,74 @@
+main {
+  padding-top: 32px;
+}
+
+.package {
+  background: rgb(212, 235, 212);
+  width: 80%;
+  border: 2px solid #0e4f1f;
+  border-left: none;
+  margin: 16px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.package a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 32px;
+}
+
+.package:hover,
+.package:active,
+#free:hover,
+#free:active {
+  border-color: #ff5454;
+  box-shadow: 2px 2px 8px 0px #ccc;
+  transform: scale(1.01);
+}
+
+.package a h1 {
+  font-size: 18px;
+}
+
+.package a h2 {
+  font-size: 18px;
+  color: rgb(122, 122, 122);
+}
+
+.package a p {
+  border: 1px solid #0e4f1f;
+  padding: 16px;
+  background: white;
+  font-size: 16px;
+  color: #0e4f1f;
+}
+
+#plus {
+  background: rgba(214, 255, 220, 0.95);
+}
+
+.clearfix {
+  clear: both;
+}
+
+#free {
+  background: rgba(234, 252, 237, 0.95);
+  float: right;
+  border: 2px solid #0e4f1f;
+  border-right: none;
+  text-align: right;
+}
+
+#premium {
+  background: rgba(14, 79, 31, 0.95);
+}
+
+#premium h1 {
+  color: white;
+}
+
+#premium h2 {
+  color: #bbb;
+}
