@@ -7,6 +7,19 @@ body {
   margin: 0;
 }
 
+/*** backdrop ***/
+
+.backdrop {
+  background-color: rgb(238, 245, 238);
+  display: none;
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 /*** header ***/
 
 .main-header {
