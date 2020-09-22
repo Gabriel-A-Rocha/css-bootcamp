@@ -1,5 +1,5 @@
 main {
-  padding-top: 32px;
+  padding-top: 4rem;
 }
 
 .background {
@@ -15,17 +15,10 @@ main {
   width: 80%;
   border: 2px solid #0e4f1f;
   border-left: none;
-  margin: 16px 0;
+  margin: 1.1rem 0;
   cursor: pointer;
   transition: all 0.2s;
   position: relative;
-}
-
-.package a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 32px;
 }
 
 .package:hover,
@@ -36,40 +29,47 @@ main {
   box-shadow: 2px 2px 8px 0px #ccc;
 }
 
-.package__title {
-  font-size: 18px;
+.package a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 2rem;
 }
 
 .package__badge {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 8px;
-  margin: 20px;
-  font-size: 12px;
+  padding: 0.5rem;
+  margin: 1.25rem;
+  font-size: 0.8rem;
   color: white;
   background: #ff5454;
 }
 
+.package__title {
+  font-size: 1.2rem;
+}
+
 .package__subtitle {
-  font-size: 18px;
+  font-size: 1.1rem;
   color: rgb(122, 122, 122);
 }
 
 .package__description {
   border: 1px solid #0e4f1f;
-  padding: 16px;
+  padding: 1rem;
   background: white;
-  font-size: 16px;
+  font-size: 1rem;
   color: #0e4f1f;
-}
-
-#plus {
-  background: rgba(214, 255, 220, 0.95);
 }
 
 .clearfix {
   clear: both;
+}
+
+#plus {
+  background: rgba(214, 255, 220, 0.95);
 }
 
 #free {
@@ -84,7 +84,7 @@ main {
   background: rgba(14, 79, 31, 0.95);
 }
 
-#premium h1 {
+#premium .package__title {
   color: white;
 }
 
