@@ -13,3 +13,7 @@ Follows below some screenshots of the pages being developed.
 ![website-version-2](./screenshots/website-version-2.png)
 
 ![website-version-2-customers](./screenshots/website-version-2-customers.png)
+
+- Version 3
+
+![website-version-3](./screenshots/website-version-3.png)

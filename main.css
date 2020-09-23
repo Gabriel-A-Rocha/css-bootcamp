@@ -7,8 +7,6 @@
     url("./images/freedom.jpg") left 20% bottom 70% / cover no-repeat border-box,
     #ff1b68;
 
-  /* background-image: linear-gradient(to bottom, red 40%, orange, transparent); */
-
   width: 100vw;
   height: 33vh;
   padding: 0.7rem;
@@ -127,4 +125,55 @@
   padding: 0.5rem;
   font-size: 1.25rem;
   margin: 0.7rem;
+}
+
+/* modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+  background: #9c1919;
+  border-color: #9c1919;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #e60f0f;
+  border-color: #e60f0f;
 }
