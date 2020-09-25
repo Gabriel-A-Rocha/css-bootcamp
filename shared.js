@@ -10,7 +10,10 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
 }
 
 backdrop.addEventListener("click", closeForeground);
-modalNoButton.addEventListener("click", closeForeground);
+
+if (modalNoButton) {
+  modalNoButton.addEventListener("click", closeForeground);
+}
 
 toggleButton.addEventListener("click", () => {
   mobileNav.classList.add("open");
@@ -24,6 +27,8 @@ function openModal() {
 
 function closeForeground() {
   backdrop.classList.remove("open");
-  modal.classList.remove("open");
+  if (modal) {
+    modal.classList.remove("open");
+  }
   mobileNav.classList.remove("open");
 }
