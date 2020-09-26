@@ -124,15 +124,12 @@
 .key-feature__list {
   list-style: none;
   padding: 0;
-  margin: 0;
   text-align: center;
 }
 
 .key-feature {
-  display: inline-block;
-  width: 30%;
-  height: 100%;
-  vertical-align: top;
+  display: block;
+  margin: 0 auto 1.5rem;
 }
 
 .key-feature__image {
@@ -149,8 +146,21 @@
   text-align: center;
   font-weight: bold;
   padding: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin: 0.7rem;
+}
+
+@media (min-width: 40rem) {
+  .key-feature__list {
+    max-width: 75rem;
+    margin: auto;
+  }
+
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
 }
 
 /* modal */
