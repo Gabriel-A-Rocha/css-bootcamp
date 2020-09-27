@@ -91,3 +91,18 @@ main {
 #premium .package__subtitle {
   color: #bbb;
 }
+
+@media (min-width: 40rem) {
+  main {
+    max-width: 70rem;
+    margin: 3rem auto;
+  }
+
+  .package {
+    border-left: 2px solid #0e4f1f;
+  }
+
+  #free {
+    border-right: 2px solid #0e4f1f;
+  }
+}
