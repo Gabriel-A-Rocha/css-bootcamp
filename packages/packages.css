@@ -1,5 +1,5 @@
 main {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .background {
@@ -95,7 +95,8 @@ main {
 @media (min-width: 40rem) {
   main {
     max-width: 70rem;
-    margin: 3rem auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .package {
