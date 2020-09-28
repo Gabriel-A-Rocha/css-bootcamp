@@ -129,6 +129,13 @@ main {
   color: #0e4f1f;
 }
 
+.button[disabled] {
+  cursor: default;
+  background-color: #ccc;
+  border-color: rgb(124, 124, 124);
+  color: rgb(124, 124, 124);
+}
+
 /*** footer ***/
 
 .main-footer {
