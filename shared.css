@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Khula&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@355&display=swap");
 
 * {
   box-sizing: border-box;
@@ -40,40 +41,34 @@ main {
   background: #2ddf5c;
   padding: 0.5rem 1rem;
   z-index: 1;
-}
 
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-header__brand {
   color: #0e4f1f;
   text-decoration: none;
-  height: 2.5rem;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .main-header__brand img {
-  height: 100%;
+  height: 2.5rem;
+  vertical-align: middle;
 }
 
 .main-nav {
   display: none;
-  text-align: right;
-  width: calc(100% - 60px);
-  vertical-align: middle;
 }
 
 .main-nav__items {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -82,7 +77,6 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.2rem 0;
 }
 
 .main-nav__item a:hover,
@@ -170,8 +164,6 @@ main {
   color: #ccc;
 }
 
-/*** mobile nav ***/
-
 .mobile-nav {
   display: none;
   position: fixed;
@@ -187,9 +179,13 @@ main {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
-  padding: 0;
-  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-nav__item {

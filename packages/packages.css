@@ -62,7 +62,8 @@ main {
   background: white;
   font-size: 1rem;
   color: #0e4f1f;
-  /* font-family: "Anton", sans-serif; */
+
+  font: 400 1rem "Montserrat", sans-serif;
 }
 
 .clearfix {
