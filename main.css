@@ -21,17 +21,6 @@
   font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) and (min-height: 40rem) {
-  #product-overview {
-    height: 40vh;
-    background-position: 50% 25%;
-  }
-
-  #product-overview h1 {
-    font-size: 3rem;
-  }
-}
-
 .section-title {
   color: #2ddf5c;
   text-align: center;
@@ -93,20 +82,12 @@
   margin: 0.5rem 0;
 }
 
-@media (min-width: 40rem) {
-  .plan {
-    display: inline-block;
-    padding: 1rem;
-    margin: 0.8rem 0;
-    width: 30%;
-    vertical-align: middle;
-    min-width: 13rem;
-    max-width: 25rem;
-  }
-
-  .plan--highlighted {
-    box-shadow: 2px 2px 5px 2px rgba(19, 19, 19, 0.5);
-  }
+.key-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
 }
 
 #key-features {
@@ -137,7 +118,7 @@
   height: 8rem;
   border: 2px solid #424242;
   border-radius: 50%;
-  margin: auto;
+  margin: 1rem auto 0.5rem;
   padding: 1.25rem;
 }
 
@@ -148,21 +129,6 @@
   font-size: 1.1rem;
   margin: 0.7rem;
 }
-
-@media (min-width: 40rem) {
-  .key-feature__list {
-    max-width: 75rem;
-    margin: auto;
-  }
-
-  .key-feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-  }
-}
-
-/* modal */
 
 .modal {
   display: none;
@@ -211,4 +177,72 @@
 .modal__action--negative:active {
   background: #e60f0f;
   border-color: #e60f0f;
+}
+
+@media (min-width: 40rem) and (min-height: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: 50% 25%;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .plan {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 25rem;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 5px 2px rgba(19, 19, 19, 0.5);
+  }
+}
+
+@media (min-width: 40rem) {
+  .key-feature__list {
+    max-width: 75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .key-feature {
+    margin: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .key-feature__image {
+    margin: 0;
+  }
+
+  .plan__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+  }
+
+  .plan--highlighted {
+    z-index: 1;
+    height: 30rem;
+  }
 }
