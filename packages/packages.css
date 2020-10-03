@@ -48,9 +48,7 @@ main {
   background: #ff5454;
   width: 12rem;
   text-align: center;
-
-  transform: rotateZ(45deg) translateX(3.2rem) translateY(-1rem);
-  transform-origin: center;
+  transform: rotate(45deg) translate(3.2rem, -1rem);
 }
 
 .package__title {
