@@ -19,6 +19,7 @@ main {
   cursor: pointer;
   transition: all 0.2s;
   position: relative;
+  overflow: hidden;
 }
 
 .package:hover,
@@ -41,10 +42,15 @@ main {
   top: 0;
   right: 0;
   padding: 0.5rem;
-  margin: 1.25rem;
+  /* margin: 1.25rem; */
   font-size: 0.8rem;
   color: white;
   background: #ff5454;
+  width: 12rem;
+  text-align: center;
+
+  transform: rotateZ(45deg) translateX(3.2rem) translateY(-1rem);
+  transform-origin: center;
 }
 
 .package__title {
