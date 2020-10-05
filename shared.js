@@ -4,6 +4,7 @@ var modalNoButton = document.querySelector(".modal__action--negative");
 var selectPlanButtons = document.querySelectorAll(".plan button");
 var mobileNav = document.querySelector(".mobile-nav");
 var toggleButton = document.querySelector(".toggle-button");
+var ctaButton = document.querySelector(".main-nav__item--cta");
 
 for (var i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener("click", openModal);
@@ -50,3 +51,15 @@ function closeForeground() {
     mobileNav.style.display = "none";
   }, 10);
 }
+
+ctaButton.addEventListener("animationstart", (event) => {
+  console.log("animation started", event);
+});
+
+ctaButton.addEventListener("animationend", (event) => {
+  console.log("animation ended", event);
+});
+
+ctaButton.addEventListener("animationiteration", (event) => {
+  console.log("animation iteration", event);
+});
