@@ -9,26 +9,44 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener("click", openModal);
 }
 
-backdrop.addEventListener("click", closeForeground);
-
 if (modalNoButton) {
   modalNoButton.addEventListener("click", closeForeground);
 }
 
-toggleButton.addEventListener("click", () => {
-  mobileNav.classList.add("open");
-  backdrop.classList.add("open");
-});
-
 function openModal() {
-  backdrop.classList.add("open");
+  backdrop.style.display = "block";
+
+  setTimeout(() => {
+    backdrop.classList.add("open");
+  }, 10);
+
   modal.classList.add("open");
 }
 
+// mobile hamburguer toggle
+
+toggleButton.addEventListener("click", () => {
+  mobileNav.style.display = "block";
+  backdrop.style.display = "block";
+
+  setTimeout(() => {
+    backdrop.classList.add("open");
+    mobileNav.classList.add("open");
+  }, 10);
+});
+
+backdrop.addEventListener("click", closeForeground);
+
 function closeForeground() {
-  backdrop.classList.remove("open");
   if (modal) {
     modal.classList.remove("open");
   }
+
+  backdrop.classList.remove("open");
   mobileNav.classList.remove("open");
+
+  setTimeout(() => {
+    backdrop.style.display = "none";
+    mobileNav.style.display = "none";
+  }, 10);
 }

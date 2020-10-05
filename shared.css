@@ -32,6 +32,7 @@ main {
 
 .backdrop {
   display: none;
+  opacity: 0;
   background-color: rgba(49, 48, 48, 0.6);
   position: fixed;
   width: 100%;
@@ -39,6 +40,7 @@ main {
   top: 0;
   bottom: 0;
   z-index: 3;
+  transition: opacity 200ms linear;
 }
 
 .main-header {
@@ -188,6 +190,8 @@ main {
   background: white;
   width: 80%;
   height: 100vh;
+  transform: translateX(-3rem);
+  transition: transform 500ms;
 }
 
 .mobile-nav__items {
@@ -235,6 +239,8 @@ main {
 
 .open {
   display: block !important;
+  opacity: 1 !important;
+  transform: translateX(0) translateY(0) !important;
 }
 
 @media (min-width: 40rem) {
