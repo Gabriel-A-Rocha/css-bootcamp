@@ -103,7 +103,8 @@ main {
 }
 
 .main-nav__item--cta {
-  animation: wiggle 200ms 1s 8 alternate;
+  /* animation: wiggle 200ms 1s 8 alternate; */
+  animation: wiggle 400ms 1s 8;
 }
 
 .main-nav__item--cta a,
@@ -194,8 +195,8 @@ main {
   background: white;
   width: 80%;
   height: 100vh;
-  transform: translateX(-3rem);
-  transition: transform 500ms;
+  transform: translateX(-30rem);
+  transition: transform 400ms;
 }
 
 .mobile-nav__items {
@@ -272,10 +273,13 @@ main {
 }
 
 @keyframes wiggle {
-  from {
+  0% {
     transform: rotateZ(0);
   }
-  to {
-    transform: rotateZ(10deg);
+  50% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(5deg);
   }
 }
