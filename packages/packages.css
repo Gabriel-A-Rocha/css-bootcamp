@@ -28,6 +28,7 @@ main {
 #free:active {
   border-color: #ff5454;
   box-shadow: 2px 2px 8px 0px #ccc;
+  animation: move-up 200ms ease-out forwards;
 }
 
 .package a {
@@ -111,5 +112,14 @@ main {
 
   #free {
     border-right: 2px solid #0e4f1f;
+  }
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-0.5rem);
   }
 }
